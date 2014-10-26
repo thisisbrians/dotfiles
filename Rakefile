@@ -107,7 +107,10 @@ task :install_vundle do
     }
   end
 
-  Vundle::update_vundle
+  # Vundle::update_vundle
+  run %{
+    vim +PluginInstall +qall
+  }
 end
 
 task :default => 'install'
