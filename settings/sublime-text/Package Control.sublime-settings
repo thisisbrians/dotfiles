@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Elm Syntax Highlighting",
+		"JsPrettier",
+		"JSX",
+		"Package Control",
+		"Solarized Color Scheme",
+		"sql-formatter",
+		"SqlBeautifier",
+		"SublimeLinter",
+		"Turtle RDF Syntax",
+		"TypeScript",
+		"Vintageous"
+	],
+	"repositories":
+	[
+		"https://github.com/braver/Solarized"
+	]
+}
