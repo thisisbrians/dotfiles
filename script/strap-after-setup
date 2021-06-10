@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # install ableton live suite 10.1.30
+echo "downloading formula for ableton live suite 10.1.30..."
 curl -sO https://raw.githubusercontent.com/Homebrew/homebrew-cask/686bdfb48115f7c2678ba8bd75da479d3ffdba46/Casks/ableton-live-suite.rb
+echo "downloaded."
+echo "installing formula with homebrew..."
 brew install --HEAD -s ableton-live-suite.rb
+echo "removing formula..."
 rm ableton-live-suite.rb
+echo "removed."
