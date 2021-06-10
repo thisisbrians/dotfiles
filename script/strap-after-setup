@@ -9,3 +9,15 @@ brew install --HEAD -s ableton-live-suite.rb
 echo "removing formula..."
 rm ableton-live-suite.rb
 echo "removed."
+
+# setup settings for sublime text
+echo "linking settings for sublime text..."
+TARGET="$HOME/Library/Application Support/Sublime Text/Packages/User"
+if [ -L "$TARGET" ]; then
+  echo "sublime settings already linked."
+else
+  echo "replacing settings directory with link to settings/sublime-text ..."
+  rm -rf "$TARGET"
+  ln -sf "$HOME/.dotfiles/settings/sublime-text" "$TARGET"
+  echo "sublime settings linked."
+fi

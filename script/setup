@@ -7,3 +7,5 @@ if [ -d ~/.oh-my-zsh ]; then
 else
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
+
+mkdir ~/src

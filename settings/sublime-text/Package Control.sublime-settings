@@ -15,10 +15,10 @@
 		"SublimeLinter",
 		"Turtle RDF Syntax",
 		"TypeScript",
-		"Vintageous"
+		"Vintageous",
 	],
 	"repositories":
 	[
 		"https://github.com/braver/Solarized"
-	]
+	],
 }
