@@ -8,4 +8,4 @@ else
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-mkdir ~/src
+mkdir -p "$HOME/src"
