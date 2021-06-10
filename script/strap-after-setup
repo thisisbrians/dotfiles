@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# install ableton live suite 10.1.30
+curl -sO https://raw.githubusercontent.com/Homebrew/homebrew-cask/686bdfb48115f7c2678ba8bd75da479d3ffdba46/Casks/ableton-live-suite.rb
+brew install --HEAD -s ableton-live-suite.rb
+rm ableton-live-suite.rb
