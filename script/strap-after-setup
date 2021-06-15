@@ -21,3 +21,7 @@ else
   ln -sf "$HOME/.dotfiles/settings/sublime-text" "$TARGET"
   echo "sublime settings linked."
 fi
+
+echo "linking kubeconfig..."
+mkdir -p "$HOME/.kube"
+ln -sf "$HOME/src/kubeconfig/configs/config" "$HOME/.kube/config"

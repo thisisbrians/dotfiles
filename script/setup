@@ -8,4 +8,11 @@ else
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+echo "linking .zshrc..."
+rm -f ~/.zshrc
+ln -sf "$HOME/.dotfiles/.zshrc" ~/.zshrc
+
+echo "creating $HOME/src..."
 mkdir -p "$HOME/src"
+echo "creating $HOME/bractlet..."
+mkdir -p "$HOME/bractlet"
