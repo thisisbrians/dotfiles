@@ -111,7 +111,7 @@ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/compl
 # update $PATH for libpq (which includes psql)
 export PATH="/usr/local/opt/libpq/bin:$PATH"
 
-# update $PATH for scripts
-export PATH=$PATH:~/scripts
+# update $PATH for bractlet scripts
+export PATH=$PATH:~/src/bin
 
 source "$DOTFILES/secrets.env"
