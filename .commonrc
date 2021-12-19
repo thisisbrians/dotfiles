@@ -1,0 +1,11 @@
+# shell config that's needed both by zsh and bash (for scripts).
+# this file is sourced from both .zshrc and .bashrc.
+
+# setup nvm:
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# setup pyenv:
+eval "$(pyenv init --path)"
+

@@ -8,6 +8,10 @@ else
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
+echo "linking .bashrc..."
+rm -f ~/.bashrc
+ln -sf "$HOME/.dotfiles/.bashrc" ~/.bashrc
+
 echo "linking .zshrc..."
 rm -f ~/.zshrc
 ln -sf "$HOME/.dotfiles/.zshrc" ~/.zshrc
@@ -27,3 +31,6 @@ nvm install --lts
 
 echo "install yarn..."
 npm install --global yarn
+
+echo "disable two-finger swipe navigation in google chrome..."
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
